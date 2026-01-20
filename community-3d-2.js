@@ -32,7 +32,7 @@ const clock = new THREE.Clock(); // Tracks time for smooth playback
 // 5. LOAD MODEL & EXTRACT CAMERA & ANIMATIONS
 const loader = new GLTFLoader();
 
-loader.load('bien tong hop 2.glb', (gltf) => {
+loader.load('Bien tong hop 2.glb', (gltf) => {
     const mainModel = gltf.scene;
     scene.add(mainModel);
 
