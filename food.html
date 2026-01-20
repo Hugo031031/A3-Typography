@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Vendors - Cong Vien Nguyen Hong</title>
+    
+    <link rel="stylesheet" href="https://use.typekit.net/qoi2eid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="food-theme">
+    <div class="transition-overlay"></div>
+    <div class="gradient-overlay"></div>
+     <!-- Decorative Order Papers -->
+    <!-- Order 1 -->
+<div class="order-paper order-1">
+    <img src="Order 1.png" alt="Order Paper" class="base-paper">
+    <img src="Order 1 Overlay.png" alt="Order 1 Overlay" class="overlay">
+</div>
+
+
+
+<!-- Order 3 -->
+<div class="order-paper order-3">
+    <img src="Order 3.png" alt="Order Paper" class="base-paper">
+    <img src="Order 3 Overlay.png" alt="Order 3 Overlay" class="overlay">
+</div>
+<!-- Order 2 -->
+<div class="order-paper order-2">
+    <img src="Order 2.png" alt="Order Paper" class="base-paper">
+    <img src="Order 2 Overlay.png" alt="Order 2 Overlay" class="overlay">
+</div>
+    </div>
+ 
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="food.html">Food</a> 
+        <a href="fitness.html">Fitness</a>
+        <a href="community.html">Community</a>
+    </nav>
+
+    <main class="food-split-layout">
+        <!-- Left Side: Paragraphs -->
+        <div class="text-side">
+            <p class="body-text">
+                In the late afternoon, the park becomes a familiar gathering place where food quietly shapes the atmosphere. Light meals, yogurt cups, and simple snacks are eaten slowly on benches or shared while walking beneath the trees. The routine feels unplanned yet ingrained, turning ordinary flavors into a steady presence.                  <p class="body-text">
+                    Over time, these repeated afternoons settle into memory for the people who return here. Children grow up coming to the park, snacks in hand, while adults revisit the same paths years later with the same habits. What seems casual at first becomes nostalgic, as shared food and shared time transform the park into a place of lasting emotional comfort.        </div>
+
+        <!-- Right Side: Vertical Title -->
+        <div class="title-side">
+            <div class="food-title-group">
+                <h1 class="food-main">FOOD</h1>
+                <h2 class="food-script">Vendors</h2>
+            </div>
+        </div>
+    </main>
+
+<script>
+    document.querySelectorAll('.order-paper').forEach(paper => {
+        paper.addEventListener('click', () => {
+            // Simply toggle the active class on the one you clicked
+            // You can now open one, two, or all three at the same time.
+            paper.classList.toggle('active');
+        });
+    });
+    
+</script>
+<script src="transition.js"></script>
+</body>
+</html>
+</body>
+</html>

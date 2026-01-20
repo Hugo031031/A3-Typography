@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - Cong Vien Nguyen Hong</title>
+    
+    <link rel="stylesheet" href="https://use.typekit.net/qoi2eid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="community-theme">
+
+    <div class="transition-overlay"></div>
+    <div class="gradient-overlay"></div>
+    <!-- Inside community.html, after the gradient-overlay -->
+<div id="community-canvas-container"></div>
+
+<!-- Add the Import Map (if not already there) -->
+<script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+    }
+</script>
+
+<!-- Link the new 3D script -->
+<script type="module" src="community-3d-2.js"></script>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="food.html">Food</a> 
+        <a href="fitness.html">Fitness</a>
+        <a href="community.html">Community</a>
+    </nav>
+
+    <main class="community-layout">
+        <!-- Top Title: Deseo Font -->
+        <h1 class="comm-title-top">Community</h1>
+
+        <!-- 3-Column Body Text: Futura Font -->
+        <div class="comm-grid">
+            <p class="comm-body">
+       </p>
+            <p class="comm-body">
+                In the park, the community is shaped by everyday people food vendors setting up their stalls, tailors working carefully by hand, spa workers offering quiet moments of care, and many other small services. Each person brings a different rhythm and purpose to the space, yet they coexist naturally within it with continuity and care. Through daily activities and brief conversations, these individual roles come together to form a connected collective that gives the park its warmth and a strong sense of belonging.            <p class="comm-body">
+            </p>
+        </div>
+
+        <!-- Bottom Reflected Title: Gopher Font -->
+        <h1 class="comm-title-bottom">Community</h1>
+    </main>
+
+    <script src="transition.js"></script>
+</body>
+</html>

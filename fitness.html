@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness - Cong Vien Nguyen Hong</title>
+    
+    <link rel="stylesheet" href="https://use.typekit.net/qoi2eid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="fitness-theme">
+    
+    <!-- 1. Transition Overlay -->
+    <div class="transition-overlay"></div>
+
+    <!-- 2. MISSING PIECE: The 3D Canvas Container -->
+    <div id="fitness-canvas-container"></div>
+
+    <!-- 3. Gradient Overlay -->
+    <div class="gradient-overlay"></div>
+    <!-- Inside fitness.html -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="food.html">Food</a> 
+        <a href="fitness.html">Fitness</a>
+        <a href="community.html">Community</a>
+    </nav>
+
+    <main class="fitness-layout">
+<!-- Inside fitness.html -->
+<h1 class="fitness-main-title">
+    <span>F</span><span>i</span><span>t</span><span>n</span><span>e</span><span>s</span><span>s</span>
+</h1>
+        <div class="fitness-text-left">
+            <p class="fitness-body">
+                From afternoon until late at night, the park stays active as people of all ages play football, kick shuttlecocks, or use outdoor exercise machines. Cheers follow good plays, though small arguments or fights sometimes break out, reflecting a routine shaped by movement, competition, and shared enjoyment.     </div>
+
+        <div class="fitness-sub-title">C lub</div>
+        
+        <div class="fitness-text-right">
+</main>
+        
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <script type="module" src="fitness-3d.js"></script>
+    <script src="transition.js"></script>
+</body>
+</html>

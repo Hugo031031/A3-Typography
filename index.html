@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cong Vien Nguyen Hong - 3D Experience</title>
+        
+        <!-- 1. ADD THIS TYPEKIT LINK -->
+        <link rel="stylesheet" href="https://use.typekit.net/qoi2eid.css">
+    
+        <!-- Keep Google Fonts for the Main Title -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+<body>
+    <div class="transition-overlay"></div>
+    <!-- 1. The 3D Canvas Container -->
+    <div id="canvas-container"></div>
+
+    <!-- 2. The Green Gradient Overlay -->
+    <div class="gradient-overlay"></div>
+
+  
+    <!-- 4. The Content (UI) -->
+    <div id="ui-layer">
+      <!-- Inside index.html -->
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="food.html">Food</a> 
+        <a href="fitness.html">Fitness</a>
+        <a href="community.html">Community</a>
+    </nav>
+        <div class="hero-title">
+            <span class="sub-title">Công Viên</span>
+            
+            <!-- THE GROUP -->
+            <div class="name-group">
+                <!-- Main Text (Written as Hông) -->
+                <span class="main-name">Nguyên Hông</span>
+                
+                <!-- The Manual Accent Mark -->
+                <span class="manual-accent">`</span>
+            </div>
+        </div>
+
+        <div class="footer-text">
+            Explore the park by rotating and scrolling to zoom
+        </div>
+    </div>
+   
+    <!-- Container for floating park sounds -->
+<div id="ambient-text-container"></div>
+
+    <!-- Import Map: Tells the browser where to find Three.js -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <!-- Link to external JS (Must be type="module") -->
+    <script type="module" src="script.js"></script>
+    <script src="transition.js"></script>
+    
+</body>
+</html>
