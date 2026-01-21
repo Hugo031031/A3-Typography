@@ -465,6 +465,7 @@ nav a:hover {
     .fitness-main-title {
         font-size: 18vw;
         margin-bottom: 0;
+        justify-content: left;
     }
 
     .fitness-sub-title {
@@ -974,5 +975,31 @@ nav a {
     .fitness-theme .footer-text {
         font-size: 0.75rem;
         padding-bottom: 20px;
+    }
+
+}
+/* =========================================
+   MOBILE RESPONSIVENESS (FITNESS)
+   ========================================= */
+   @media (max-width: 600px) {
+    .fitness-layout {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        padding: 25vh 10% 5vh 10%;
+        gap: 20px;
+    }
+
+    .fitness-main-title {
+        font-size: 18vw;
+        margin-bottom: 0;
+        justify-content: left;
+    }
+
+    .fitness-sub-title {
+        font-size: 18vw;
+        margin-top: -5%;
+        text-align: right;
+        margin-right: 5%;
     }
 }
